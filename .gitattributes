@@ -1,0 +1,12 @@
+# Handle line endings.
+# See https://help.github.com/articles/dealing-with-line-endings/
+
+*.gif binary
+*.ico binary
+*.jpg binary
+*.png binary
+*.eot binary
+*.ttf binary
+*.webp binary
+*.woff binary
+*.woff2 binary
