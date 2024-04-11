@@ -10,7 +10,7 @@
 ?>
 <!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|30"}}},"backgroundColor":"accent"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center has-accent-background-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:post-featured-image /--></div>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:post-featured-image {"aspectRatio":"3/4","style":{"border":{"radius":"0px"}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"66.66%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
@@ -25,7 +25,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>/ 5</p>
+<p>/ 5 Stars</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -51,7 +51,13 @@
 <!-- wp:paragraph {"placeholder":"Book Author","metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"themeslug_book_author"}}}}} -->
 <p></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"core/post-meta","args":{"key":"themeslug_book_goodreads_url"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">View on Goodreads →</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
 <!-- wp:pullquote {"textAlign":"left","style":{"typography":{"fontSize":"1.2rem"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"className":"is-style-plain"} -->

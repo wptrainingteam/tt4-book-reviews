@@ -30,8 +30,7 @@ function themeslug_register_meta() {
 			'show_in_rest'      => true,
 			'single'            => true,
 			'type'              => 'integer',
-			'sanitize_callback' => 'absint',
-			'default'           => 5,
+			'sanitize_callback' => 'absint'
 		)
 	);
 	register_meta(
@@ -41,8 +40,17 @@ function themeslug_register_meta() {
 			'show_in_rest'      => true,
 			'single'            => true,
 			'type'              => 'integer',
-			'sanitize_callback' => 'absint',
-			'default'           => 0
+			'sanitize_callback' => 'absint'
+		)
+	);
+	register_meta(
+		'post',
+		'themeslug_book_goodreads_url',
+		array(
+			'show_in_rest'      => true,
+			'single'            => true,
+			'type'              => 'string',
+			'sanitize_callback' => 'esc_url_raw'
 		)
 	);
 }
