@@ -100,39 +100,12 @@ registerBlockVariation( 'core/paragraph', {
 });
 
 registerBlockVariation( 'core/paragraph', {
-	name:       'themeslug/book-author',
-	title:      __('Book Author', 'x3p0-ideas'),
-	description: __('Displays the book author.', 'x3p0-ideas'),
-	category:   'widgets',
-	keywords:   [ 'book', 'author' ],
-	icon:       page,
-	scope:      [ 'inserter' ],
-	attributes: {
-		metadata: {
-			bindings: {
-				content: {
-					source: 'core/post-meta',
-					args: {
-						key: 'themeslug_book_author'
-					}
-				}
-			}
-		},
-		placeholder: __( 'Book Author', 'themeslug' )
-	},
-	example: {},
-	isActive: (blockAttributes) =>
-		'core/post-meta' === blockAttributes?.metadata?.bindings?.content?.source
-		&& 'themeslug_book_author' === blockAttributes?.metadata?.bindings?.content?.args?.key
-});
-
-registerBlockVariation( 'core/paragraph', {
 	name:       'themeslug/book-length',
 	title:      __('Book Length', 'x3p0-ideas'),
 	description: __('Displays the book length in pages.', 'x3p0-ideas'),
 	category:   'widgets',
-	keywords:   [ 'book', 'length', 'pages' ],
-	icon:       starFilled,
+	keywords:   [ 'book', 'pages', 'length' ],
+	icon:       page,
 	scope:      [ 'inserter' ],
 	attributes: {
 		metadata: {
@@ -151,4 +124,31 @@ registerBlockVariation( 'core/paragraph', {
 	isActive: (blockAttributes) =>
 		'core/post-meta' === blockAttributes?.metadata?.bindings?.content?.source
 		&& 'themeslug_book_length' === blockAttributes?.metadata?.bindings?.content?.args?.key
+});
+
+registerBlockVariation( 'core/paragraph', {
+	name:       'themeslug/book-rating',
+	title:      __('Book Rating', 'x3p0-ideas'),
+	description: __('Displays the book rating.', 'x3p0-ideas'),
+	category:   'widgets',
+	keywords:   [ 'book', 'rating', 'review' ],
+	icon:       starFilled,
+	scope:      [ 'inserter' ],
+	attributes: {
+		metadata: {
+			bindings: {
+				content: {
+					source: 'core/post-meta',
+					args: {
+						key: 'themeslug_book_rating'
+					}
+				}
+			}
+		},
+		placeholder: __( 'Book Rating', 'themeslug' )
+	},
+	example: {},
+	isActive: (blockAttributes) =>
+		'core/post-meta' === blockAttributes?.metadata?.bindings?.content?.source
+		&& 'themeslug_book_rating' === blockAttributes?.metadata?.bindings?.content?.args?.key
 });
