@@ -8,11 +8,21 @@
  * @link      https://yourwebsite.tld
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
- 
+
 // Requires custom post meta for data (e.g., rating, ISBN number, etc.).
 add_action( 'init', 'themeslug_register_meta' );
 
 function themeslug_register_meta() {
+	register_meta(
+		'post',
+		'themeslug_book_author',
+		array(
+			'show_in_rest'      => true,
+			'single'            => true,
+			'type'              => 'string',
+			'sanitize_callback' => 'wp_filter_nohtml_kses'
+		)
+	);
 	register_meta(
 		'post',
 		'themeslug_book_rating',
@@ -22,6 +32,17 @@ function themeslug_register_meta() {
 			'type'              => 'integer',
 			'sanitize_callback' => 'absint',
 			'default'           => 5,
+		)
+	);
+	register_meta(
+		'post',
+		'themeslug_book_length',
+		array(
+			'show_in_rest'      => true,
+			'single'            => true,
+			'type'              => 'integer',
+			'sanitize_callback' => 'absint',
+			'default'           => 0
 		)
 	);
 }
