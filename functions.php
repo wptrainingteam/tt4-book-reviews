@@ -29,8 +29,8 @@ function themeslug_register_meta() {
 		array(
 			'show_in_rest'      => true,
 			'single'            => true,
-			'type'              => 'integer',
-			'sanitize_callback' => 'absint'
+			'type'              => 'string',
+			'sanitize_callback' => 'wp_filter_nohtml_kses'
 		)
 	);
 	register_meta(
@@ -39,8 +39,8 @@ function themeslug_register_meta() {
 		array(
 			'show_in_rest'      => true,
 			'single'            => true,
-			'type'              => 'integer',
-			'sanitize_callback' => 'absint'
+			'type'              => 'string',
+			'sanitize_callback' => 'wp_filter_nohtml_kses'
 		)
 	);
 	register_meta(
