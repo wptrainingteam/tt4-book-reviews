@@ -1,3 +1,4 @@
+// Registers custom block variations for bindings.
 
 import { registerBlockVariation } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';

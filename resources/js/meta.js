@@ -1,3 +1,5 @@
+// Adds post meta input controls to posts.
+
 import { useEntityProp } from '@wordpress/core-data';
 import { useSelect } from '@wordpress/data';
 import { PluginDocumentSettingPanel } from '@wordpress/edit-post';

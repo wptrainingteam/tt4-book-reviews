@@ -1,3 +1,5 @@
+// Adds custom controls to Query Loop block.
+
 import { __ } from '@wordpress/i18n';
 import { addFilter } from '@wordpress/hooks';
 import { InspectorControls } from '@wordpress/block-editor';
@@ -36,13 +38,16 @@ const BookReviewControls = ( { props: {
 };
 
 const withBookReviewControls = ( BlockEdit ) => ( props ) => {
-	return (
+	console.log( props );
+	return 'core/query' === props.name ? (
 		<>
 			<BlockEdit {...props} />
 			<InspectorControls>
 			<BookReviewControls props={props} />
 			</InspectorControls>
 		</>
+	) : (
+		<BlockEdit {...props} />
 	);
 };
 
