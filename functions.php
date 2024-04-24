@@ -3,13 +3,12 @@
  * Theme functions file, which is auto-loaded by WordPress. Use this file to
  * load additional PHP files and bootstrap the theme.
  *
- * @author	Your Name <youremail@domain.tld>
+ * @author    Your Name <youremail@domain.tld>
  * @copyright Copyright (c) 2023, Your Name
- * @link	  https://yourwebsite.tld
+ * @link      https://yourwebsite.tld
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-// Requires custom post meta for data (e.g., rating, ISBN number, etc.).
 add_action( 'init', 'themeslug_register_meta' );
 
 function themeslug_register_meta() {
@@ -17,9 +16,9 @@ function themeslug_register_meta() {
 		'post',
 		'themeslug_book_author',
 		array(
-			'show_in_rest'	  => true,
-			'single'			=> true,
-			'type'			  => 'string',
+			'show_in_rest'	    => true,
+			'single'            => true,
+			'type'              => 'string',
 			'sanitize_callback' => 'wp_filter_nohtml_kses'
 		)
 	);
@@ -27,9 +26,9 @@ function themeslug_register_meta() {
 		'post',
 		'themeslug_book_rating',
 		array(
-			'show_in_rest'	  => true,
-			'single'			=> true,
-			'type'			  => 'string',
+			'show_in_rest'      => true,
+			'single'            => true,
+			'type'              => 'string',
 			'sanitize_callback' => 'wp_filter_nohtml_kses'
 		)
 	);
@@ -37,9 +36,9 @@ function themeslug_register_meta() {
 		'post',
 		'themeslug_book_length',
 		array(
-			'show_in_rest'	  => true,
-			'single'			=> true,
-			'type'			  => 'string',
+			'show_in_rest'      => true,
+			'single'            => true,
+			'type'              => 'string',
 			'sanitize_callback' => 'wp_filter_nohtml_kses'
 		)
 	);
@@ -47,9 +46,9 @@ function themeslug_register_meta() {
 		'post',
 		'themeslug_book_goodreads_url',
 		array(
-			'show_in_rest'	  => true,
-			'single'			=> true,
-			'type'			  => 'string',
+			'show_in_rest'      => true,
+			'single'            => true,
+			'type'              => 'string',
 			'sanitize_callback' => 'esc_url_raw'
 		)
 	);
@@ -87,15 +86,15 @@ add_filter( 'pre_render_block', 'themeslug_pre_render_block', 10, 2 );
 
 function themeslug_pre_render_block( $pre_render, $parsed_block ) {
 
-	// Determine if this is the custom block variation.
-	if ( 'book-reviews' === $parsed_block['attrs']['namespace'] ) {
+	if (
+		isset( $parsed_block['attrs']['query']['bookRating'] )
+		&& absint( $parsed_block['attrs']['query']['bookRating'] ) > 0
+	) {
 		add_filter(
 			'query_loop_block_query_vars',
 			function( $query ) use ( $parsed_block ) {
-				if ( $parsed_block['attrs']['query']['bookRating'] ) {
-					$query['meta_key'] = 'rating';
-					$query['meta_value'] = absint( $parsed_block['attrs']['query']['bookRating'] );
-				}
+				$query['meta_key'] = 'themeslug_book_rating';
+				$query['meta_value'] = absint( $parsed_block['attrs']['query']['bookRating'] );
 
 				return $query;
 			}

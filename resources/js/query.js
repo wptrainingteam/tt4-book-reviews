@@ -1,57 +1,7 @@
-
-import { registerBlockVariation } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
-
 import { addFilter } from '@wordpress/hooks';
 import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
-
-const VARIATION_NAME = 'themeslug/book-reviews';
-
-registerBlockVariation( 'core/query', {
-	name: VARIATION_NAME,
-	title: __( 'Book Reviews', 'themeslug' ),
-	icon: 'book',
-	description: __( 'Displays a list of book reviews with star rating option.', 'themeslug' ),
-	isActive: [ 'namespace' ],
-	attributes: {
-		namespace: VARIATION_NAME,
-		query: {
-		    postType: 'post',
-		    perPage: 6,
-		    offset: 0
-		},
-		align: 'wide'
-	},
-	innerBlocks: [
-		[
-			'core/post-template',
-			{
-				style:{
-					spacing:{
-						blockGap:"var:preset|spacing|30"
-					}
-				},
-				layout:{
-					type:"grid",
-					columnCount:3
-				}
-			},
-			[
-				[ 'core/post-featured-image' ],
-				[ 'core/post-title' ]
-			]
-		]
-	]
-} );
-
-const isBookReviewsVariation = ( props ) => {
-	const {
-		attributes: { namespace }
-	} = props;
-
-	return namespace && namespace === VARIATION_NAME;
-};
 
 const BookReviewControls = ( { props: {
 	attributes,
@@ -63,7 +13,7 @@ const BookReviewControls = ( { props: {
 		<PanelBody title={ __( 'Book Review', 'themeslug' ) }>
 			<SelectControl
 				label={ __( 'Rating', 'themeslug' ) }
-				value={ query.bookRating }
+				value={ query?.bookRating || '' }
 				options={ [
 					{ value: '', label: '' },
 					{ value: 1,  label: __( '1 Star', 'themeslug' ) },
@@ -86,15 +36,13 @@ const BookReviewControls = ( { props: {
 };
 
 const withBookReviewControls = ( BlockEdit ) => ( props ) => {
-	return isBookReviewsVariation( props ) ? (
+	return (
 		<>
 			<BlockEdit {...props} />
 			<InspectorControls>
 			<BookReviewControls props={props} />
 			</InspectorControls>
 		</>
-	) : (
-		<BlockEdit {...props} />
 	);
 };
 
