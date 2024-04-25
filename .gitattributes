@@ -13,6 +13,7 @@
 *.gif binary
 *.ico binary
 *.jpg binary
+*.jpeg binary
 *.png binary
 *.eot binary
 *.ttf binary
