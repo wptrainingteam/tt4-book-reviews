@@ -10,9 +10,14 @@
 	},
 	"steps": [
 		{
-			"step": "login",
-			"username": "admin",
-			"password": "password"
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/tt4-book-reviews.zip"
+			},
+			"options": {
+				"activate": true
+			}
 		},
 		{
 			"step": "importWxr",
@@ -22,14 +27,9 @@
 			}
 		},
 		{
-			"step": "installTheme",
-			"themeZipFile": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/tt4-book-reviews.zip"
-			},
-			"options": {
-				"activate": true
-			}
+			"step": "login",
+			"username": "admin",
+			"password": "password"
 		}
 	]
 }
