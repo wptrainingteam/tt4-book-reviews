@@ -1,6 +1,15 @@
-# Handle line endings.
-# See https://help.github.com/articles/dealing-with-line-endings/
+###
+## Git Attributes configuration file.
+##
+## @link https://git-scm.com/docs/gitattributes
+###
 
+## -----------------------------------------------------------------------------
+## Denote all files that are truly binary and should not be modified.
+## @link https://help.github.com/articles/dealing-with-line-endings/
+## -----------------------------------------------------------------------------
+
+* text auto
 *.gif binary
 *.ico binary
 *.jpg binary
@@ -10,3 +19,23 @@
 *.webp binary
 *.woff binary
 *.woff2 binary
+*.zip binary
+
+## -----------------------------------------------------------------------------
+## Ignore folders and files when exporting as a ZIP.
+## -----------------------------------------------------------------------------
+
+.github/ export-ignore
+_playground/ export-ignore
+node_modules/ export-ignore
+vendor/ export-ignore
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+composer.json export-ignore
+composer.lock export-ignore
+package-lock.json export-ignore
+package.json export-ignore
+webpack.config.js export-ignore
+*.map export-ignore
+.DS_Store export-ignore

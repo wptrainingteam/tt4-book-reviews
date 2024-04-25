@@ -1,0 +1,22 @@
+{
+	"name": "justintadlock/tt4-book-reviews",
+	"type": "wordpress-theme",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"zip": "composer archive --file=tt4-book-reviews"
+	},
+	"require": {
+                "php": ">=7.4"
+	},
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"config": {
+		"archive-dir": "./_playground",
+		"archive-format": "zip"
+	},
+	"archive": {
+		"exclude": [
+			"/vendor"
+		]
+	}
+}
