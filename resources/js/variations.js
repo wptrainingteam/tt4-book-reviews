@@ -1,4 +1,9 @@
-// Registers custom block variations for bindings.
+/**
+ * Registers custom block variations that serve as a layer over block bindings.
+ * This allows users to insert bindings without having to open the Code Editor.
+ *
+ * @link https://developer.wordpress.org/news/2023/08/29/an-introduction-to-block-variations/
+ */
 
 import { registerBlockVariation } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
@@ -10,6 +15,7 @@ const goodreadsIcon = (
 	</svg>
 );
 
+// Register the Book Author variation.
 registerBlockVariation( 'core/paragraph', {
 	name:       'themeslug/book-author',
 	title:      __( 'Book Author', 'themeslug' ),
@@ -32,10 +38,13 @@ registerBlockVariation( 'core/paragraph', {
 		placeholder: __( 'Book Author', 'themeslug' )
 	},
 	example: {},
+	// Note that we have to check for the specific binding key to determine
+	// if the variation is active.
 	isActive: (blockAttributes) =>
 		'themeslug_book_author' === blockAttributes?.metadata?.bindings?.content?.args?.key
 });
 
+// Register the Book Length variation.
 registerBlockVariation( 'core/paragraph', {
 	name:       'themeslug/book-length',
 	title:      __( 'Book Length', 'themeslug' ),
@@ -62,6 +71,7 @@ registerBlockVariation( 'core/paragraph', {
 		'themeslug_book_length' === blockAttributes?.metadata?.bindings?.content?.args?.key
 });
 
+// Register the Book Rating variation.
 registerBlockVariation( 'core/paragraph', {
 	name:       'themeslug/book-rating',
 	title:      __( 'Book Rating', 'themeslug' ),
@@ -88,6 +98,7 @@ registerBlockVariation( 'core/paragraph', {
 		'themeslug_book_rating' === blockAttributes?.metadata?.bindings?.content?.args?.key
 });
 
+// Register the Book Goodreads Button variation.
 registerBlockVariation( 'core/button', {
 	name:       'themeslug/book-goodreads-button',
 	title:      __( 'Book Goodreads Button', 'themeslug' ),

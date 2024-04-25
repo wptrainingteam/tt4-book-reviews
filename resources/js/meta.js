@@ -1,4 +1,6 @@
-// Adds post meta input controls to posts.
+/**
+ * Adds post meta input controls to posts.
+ */
 
 import { useEntityProp } from '@wordpress/core-data';
 import { useSelect } from '@wordpress/data';
@@ -14,19 +16,34 @@ import {
 	__experimentalVStack as VStack
 } from '@wordpress/components';
 
+/**
+ * Registers a plugin that uses the `PluginDocumentSettingsPanel` SlotFill in
+ * the post editor to output a custom panel.
+ *
+ * @link https://developer.wordpress.org/block-editor/reference-guides/slotfills/plugin-document-setting-panel/
+ */
 registerPlugin( 'tt4-book-reviews', {
 	render: () => {
+		// Gets the current post type from the `core/editor` store via
+		// the `useSelect()` hook.
+		// @link https://developer.wordpress.org/block-editor/reference-guides/packages/packages-data/#useselect
 		const postType = useSelect(
 			( select ) => select( 'core/editor' ).getCurrentPostType(),
 			[]
 		);
 
+		// Assign constants for getting/setting post meta.
+		// @link https://developer.wordpress.org/block-editor/how-to-guides/metabox/#step-2-add-meta-block
 		const [ meta, setMeta ] = useEntityProp( 'postType', postType, 'meta' );
 
+		// Bail early if this is not the `post` post type.
 		if ( 'post' !== postType ) {
 			return null;
 		}
 
+		// Returns controls built with Core components for handling the
+		// meta input fields.
+		// @link https://developer.wordpress.org/block-editor/reference-guides/components/
 		return (
 			<PluginDocumentSettingPanel
 				title={ __( 'Book Review', 'themeslug' ) }
