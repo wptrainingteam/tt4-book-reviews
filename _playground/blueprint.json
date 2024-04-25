@@ -12,6 +12,13 @@
 			"step": "login"
 		},
 		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
+			}
+		},
+		{
 			"step": "installTheme",
 			"themeZipFile": {
 				"resource": "url",
@@ -19,17 +26,6 @@
 			},
 			"options": {
 				"activate": true
-			}
-		},
-		{
-			"step": "wp-cli",
-			"command": "wp post delete $(wp post list --post_type='post' --format=ids) --force"
-		},
-		{
-			"step": "importWxr",
-			"file": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
 			}
 		}
 	]
