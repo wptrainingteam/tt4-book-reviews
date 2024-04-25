@@ -635,39 +635,6 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[huck-finn]]></title>
-		<link>http://localhost/book-reviews/adventures-of-huckleberry-finn/huck-finn/</link>
-		<pubDate>Wed, 24 Apr 2024 17:16:09 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/huck-finn.jpeg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>13</wp:post_id>
-		<wp:post_date><![CDATA[2024-04-24 17:16:09]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-04-24 17:16:09]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-24 17:16:09]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-24 17:16:09]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[huck-finn]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>12</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/huck-finn.jpeg]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2024/04/huck-finn.jpeg]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:700;s:6:"height";i:874;s:4:"file";s:22:"2024/04/huck-finn.jpeg";s:8:"filesize";i:157054;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:22:"huck-finn-240x300.jpeg";s:5:"width";i:240;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:10614;}s:9:"thumbnail";a:5:{s:4:"file";s:22:"huck-finn-150x150.jpeg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:4200;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title><![CDATA[Little Women]]></title>
 		<link>http://localhost/book-reviews/little-women/</link>
 		<pubDate>Wed, 24 Apr 2024 17:22:45 +0000</pubDate>
