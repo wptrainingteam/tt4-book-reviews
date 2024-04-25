@@ -1,6 +1,5 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
-	"landingPage": "/wp-admin/site-editor.php",
 	"preferredVersions": {
 		"php": "8.3",
 		"wp": "latest"
@@ -9,6 +8,9 @@
 		"networking": true
 	},
 	"steps": [
+		{
+			"step": "login"
+		},
 		{
 			"step": "installTheme",
 			"themeZipFile": {
@@ -20,16 +22,11 @@
 			}
 		},
 		{
-			"step": "login",
-			"username": "admin",
-			"password": "password"
+			"step": "wp-cli",
+			"command": "wp post delete $(wp post list --post_type='post' --format=ids) --force"
 		},
 		{
-			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
-		},
-		{
-			"step": "importFile",
+			"step": "importWxr",
 			"file": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
