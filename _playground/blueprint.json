@@ -20,16 +20,20 @@
 			}
 		},
 		{
-			"step": "importWxr",
+			"step": "login",
+			"username": "admin",
+			"password": "password"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
+		},
+		{
+			"step": "importFile",
 			"file": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
 			}
-		},
-		{
-			"step": "login",
-			"username": "admin",
-			"password": "password"
 		}
 	]
 }
