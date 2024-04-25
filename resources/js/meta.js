@@ -21,11 +21,11 @@ registerPlugin( 'tt4-book-reviews', {
 			[]
 		);
 
+		const [ meta, setMeta ] = useEntityProp( 'postType', postType, 'meta' );
+
 		if ( 'post' !== postType ) {
 			return null;
 		}
-
-		const [ meta, setMeta ] = useEntityProp( 'postType', postType, 'meta' );
 
 		return (
 			<PluginDocumentSettingPanel
@@ -40,7 +40,7 @@ registerPlugin( 'tt4-book-reviews', {
 						min={ 0 }
 						max={ 5 }
 						step={ 1 }
-						value={ parseInt( meta?.themeslug_book_rating ) }
+						value={ parseInt( meta?.themeslug_book_rating, 10 ) }
 						onChange={ ( value ) => setMeta( {
 							...meta,
 							themeslug_book_rating: `${ value }` || null
@@ -57,7 +57,7 @@ registerPlugin( 'tt4-book-reviews', {
 					<NumberControl
 						label={ __( 'Total Pages', 'themeslug' ) }
 						min={ 0 }
-						value={ parseInt( meta?.themeslug_book_length ) }
+						value={ parseInt( meta?.themeslug_book_length, 10 ) }
 						onChange={ ( value ) => setMeta( {
 							...meta,
 							themeslug_book_length: `${ value }` || null
