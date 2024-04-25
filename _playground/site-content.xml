@@ -72,7 +72,7 @@
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[Uncategorized]]></wp:term_name>
 	</wp:term>
-		
+
 	<generator>https://wordpress.org/?v=6.5.2</generator>
 
 		<item>
@@ -475,7 +475,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<link>http://localhost/book-reviews/dracula/dracula/</link>
 		<pubDate>Wed, 24 Apr 2024 17:08:43 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/book-reviews/wp-content/uploads/2024/04/dracula.jpeg</guid>
+		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/dracula.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -493,7 +493,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost/book-reviews/wp-content/uploads/2024/04/dracula.jpeg]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/dracula.jpeg]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/04/dracula.jpeg]]></wp:meta_value>
@@ -639,7 +639,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<link>http://localhost/book-reviews/adventures-of-huckleberry-finn/huck-finn/</link>
 		<pubDate>Wed, 24 Apr 2024 17:16:09 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/book-reviews/wp-content/uploads/2024/04/huck-finn.jpeg</guid>
+		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/huck-finn.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -657,7 +657,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost/book-reviews/wp-content/uploads/2024/04/huck-finn.jpeg]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/huck-finn.jpeg]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/04/huck-finn.jpeg]]></wp:meta_value>
@@ -845,7 +845,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<link>http://localhost/book-reviews/little-women/little-women/</link>
 		<pubDate>Wed, 24 Apr 2024 17:21:20 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/book-reviews/wp-content/uploads/2024/04/little-women.jpeg</guid>
+		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/little-women.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -863,7 +863,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost/book-reviews/wp-content/uploads/2024/04/little-women.jpeg]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/little-women.jpeg]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/04/little-women.jpeg]]></wp:meta_value>
@@ -1023,7 +1023,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<link>http://localhost/book-reviews/emma/emma/</link>
 		<pubDate>Wed, 24 Apr 2024 18:07:51 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/book-reviews/wp-content/uploads/2024/04/emma.jpeg</guid>
+		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/emma.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1041,7 +1041,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost/book-reviews/wp-content/uploads/2024/04/emma.jpeg]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/emma.jpeg]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/04/emma.jpeg]]></wp:meta_value>
@@ -1193,7 +1193,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<link>http://localhost/book-reviews/around-the-world-in-eighty-days/around-the-world-80/</link>
 		<pubDate>Wed, 24 Apr 2024 18:14:16 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/book-reviews/wp-content/uploads/2024/04/around-the-world-80.jpeg</guid>
+		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/around-the-world-80.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1211,7 +1211,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost/book-reviews/wp-content/uploads/2024/04/around-the-world-80.jpeg]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/around-the-world-80.jpeg]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/04/around-the-world-80.jpeg]]></wp:meta_value>
@@ -1351,7 +1351,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<link>http://localhost/book-reviews/the-great-gatsby/gatsby/</link>
 		<pubDate>Wed, 24 Apr 2024 18:16:36 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/book-reviews/wp-content/uploads/2024/04/gatsby.jpeg</guid>
+		<guid isPermaLink="false">https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/gatsby.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1369,7 +1369,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost/book-reviews/wp-content/uploads/2024/04/gatsby.jpeg]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/media/gatsby.jpeg]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/04/gatsby.jpeg]]></wp:meta_value>
@@ -1451,4 +1451,3 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 														</item>
 				</channel>
 </rss>
-	
