@@ -12,13 +12,6 @@
 			"step": "login"
 		},
 		{
-			"step": "importWxr",
-			"file": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
-			}
-		},
-		{
 			"step": "installTheme",
 			"themeZipFile": {
 				"resource": "url",
@@ -26,6 +19,13 @@
 			},
 			"options": {
 				"activate": true
+			}
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
 			}
 		}
 	]
