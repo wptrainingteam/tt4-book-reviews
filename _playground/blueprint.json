@@ -15,7 +15,7 @@
 			"step": "installTheme",
 			"themeZipFile": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/tt4-book-reviews.zip"
+				"url": "https://raw.githubusercontent.com/wptrainingteam/tt4-book-reviews/master/_playground/tt4-book-reviews.zip"
 			},
 			"options": {
 				"activate": true
@@ -25,7 +25,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/justintadlock/tt4-book-reviews/master/_playground/site-content.xml"
+				"url": "https://raw.githubusercontent.com/wptrainingteam/tt4-book-reviews/master/_playground/site-content.xml"
 			}
 		}
 	]
