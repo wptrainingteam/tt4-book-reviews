@@ -22,6 +22,10 @@
 			}
 		},
 		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
+		},
+		{
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
