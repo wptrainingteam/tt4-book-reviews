@@ -5,6 +5,7 @@
 		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
 	},
 	"devDependencies": {
+		"@wordpress/env": "^10.39.0",
 		"@wordpress/icons": "^11.3.0",
 		"@wordpress/scripts": "^31.2.0",
 		"path": "^0.12.7",
