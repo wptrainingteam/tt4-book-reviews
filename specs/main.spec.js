@@ -39,4 +39,16 @@ test( 'Inserts Book Author block', async ( { admin, page, editor } ) => {
 			},
 		},
 	] );
+
+	await page.evaluate( () =>
+		wp.data
+			.dispatch( 'core/editor' )
+			.editPost( { meta: { themeslug_book_author: 'Jane Austen' } } )
+	);
+
+	const bookAuthorBlock = editor.canvas.getByRole( 'document', {
+		name: 'Block: Paragraph',
+	} );
+
+	await expect( bookAuthorBlock ).toHaveText( 'Jane Austen' );
 } );
