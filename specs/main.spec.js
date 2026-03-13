@@ -52,3 +52,32 @@ test( 'Inserts Book Author block', async ( { admin, page, editor } ) => {
 
 	await expect( bookAuthorBlock ).toHaveText( 'Jane Austen' );
 } );
+
+test( 'Inserts Book Review Card pattern', async ( { admin, page, editor } ) => {
+	await admin.createNewPost();
+
+	await page
+		.getByRole( 'button', {
+			name: 'Block Inserter',
+		} )
+		.click();
+
+	await page
+		.getByRole( 'tab', {
+			name: 'Patterns',
+		} )
+		.click();
+
+	await page.getByRole( 'tab', { name: 'Book Reviews' } ).click();
+
+	await page
+		.getByRole( 'listbox', { name: 'Book Reviews' } )
+		.getByRole( 'option', { name: 'Book Review Card' } )
+		.click();
+
+	const bookReviewCardPattern = editor.canvas.getByRole( 'document', {
+		name: 'Block: Columns',
+	} );
+
+	await expect( bookReviewCardPattern ).toMatchAriaSnapshot();
+} );
