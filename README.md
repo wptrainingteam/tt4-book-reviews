@@ -1,1 +1,1 @@
-An example repo that uses Block Bindings for a book review website.
+The companion repository to the [Building a book review site with Block Bindings, part 1: Custom fields and block variations](https://developer.wordpress.org/news/2024/05/building-a-book-review-site-with-block-bindings-part-1-custom-fields-and-block-variations/) and [Building a book review site with Block Bindings, part 2: Queries, patterns, and templates](https://developer.wordpress.org/news/2024/06/building-a-book-review-site-with-block-bindings-part-2-queries-patterns-and-templates/) articles.
