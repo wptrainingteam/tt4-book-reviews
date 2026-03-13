@@ -2,7 +2,8 @@
 	"name": "your-project-name",
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
-		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
+		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public",
+		"wp-env": "wp-env"
 	},
 	"devDependencies": {
 		"@wordpress/env": "^10.39.0",
