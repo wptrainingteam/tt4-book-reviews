@@ -81,3 +81,33 @@ test( 'Inserts Book Review Card pattern', async ( { admin, page, editor } ) => {
 
 	await expect( bookReviewCardPattern ).toMatchAriaSnapshot();
 } );
+
+test( 'Displays book review meta on the frontend', async ( {
+	page,
+	requestUtils,
+} ) => {
+	const newPost = await requestUtils.createPost( {
+		status: 'publish',
+		title: 'Emma',
+		content: '<!-- wp:pattern {"slug":"themeslug/book-review-card"} /-->',
+		meta: {
+			themeslug_book_author: 'Jane Austen',
+			themeslug_book_rating: '5',
+			themeslug_book_length: '477',
+			themeslug_book_goodreads_url:
+				'https://www.goodreads.com/book/show/6969.Emma',
+		},
+	} );
+
+	await page.goto( `?p=${ newPost.id }` );
+
+	await expect( page.getByText( '5 / 5 Stars' ) ).toBeVisible();
+	await expect( page.getByText( '477 Pages' ) ).toBeVisible();
+	await expect( page.getByText( 'Written by Jane Austen' ) ).toBeVisible();
+	await expect(
+		page.getByRole( 'link', { name: 'View on Goodreads' } )
+	).toHaveAttribute(
+		'href',
+		'https://www.goodreads.com/book/show/6969.Emma'
+	);
+} );
