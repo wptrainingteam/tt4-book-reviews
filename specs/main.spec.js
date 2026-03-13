@@ -7,3 +7,36 @@ test( 'Loads WordPress dashboard', async ( { admin, page } ) => {
 		page.getByRole( 'heading', { name: 'Welcome to WordPress', level: 2 } )
 	).toBeVisible();
 } );
+
+test( 'Inserts Book Author block', async ( { admin, page, editor } ) => {
+	await admin.createNewPost();
+
+	await page
+		.getByRole( 'button', {
+			name: 'Block Inserter',
+		} )
+		.click();
+
+	await page
+		.getByRole( 'region', { name: 'Block Library' } )
+		.getByRole( 'listbox', { name: 'Widgets' } )
+		.getByRole( 'option', { name: 'Book Author', exact: true } )
+		.click();
+
+	await expect.poll( editor.getBlocks ).toMatchObject( [
+		{
+			name: 'core/paragraph',
+			attributes: {
+				metadata: {
+					bindings: {
+						content: {
+							source: 'core/post-meta',
+							args: { key: 'themeslug_book_author' },
+						},
+					},
+				},
+				placeholder: 'Book Author',
+			},
+		},
+	] );
+} );
