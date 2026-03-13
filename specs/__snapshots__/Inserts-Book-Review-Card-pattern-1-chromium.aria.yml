@@ -1,0 +1,24 @@
+- 'document "Block: Columns"':
+      - 'document "Block: Column (1 of 2)"':
+            - 'document "Block: Featured Image"':
+                  - button "Add a featured image"
+      - 'document "Block: Column (2 of 2)"':
+            - 'document "Block: Stack"':
+                  - 'document "Block: Row"':
+                        - 'document "Block: Paragraph"'
+                        - document "Empty themeslug_book_rating; start writing to edit its value"
+                        - 'document "Block: Paragraph"'
+                  - 'document "Block: Row"':
+                        - 'document "Block: Paragraph"':
+                              - strong: 📃
+                        - document "Empty themeslug_book_length; start writing to edit its value"
+                        - 'document "Block: Paragraph"'
+                  - 'document "Block: Row"':
+                        - 'document "Block: Paragraph"'
+                        - document "Empty themeslug_book_author; start writing to edit its value"
+                  - 'document "Block: Buttons"':
+                        - 'document "Block: Book Goodreads Button"':
+                              - textbox "Button text"
+            - 'document "Block: Pullquote"':
+                  - blockquote:
+                        - textbox "Pullquote text"
