@@ -13,7 +13,14 @@
 		},
 		{
 			"step": "installTheme",
-			"themeZipFile": {
+			"themeData": {
+				"resource": "wordpress.org/themes",
+				"slug": "twentytwentyfour"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/wptrainingteam/tt4-book-reviews/master/_playground/tt4-book-reviews.zip"
 			},
