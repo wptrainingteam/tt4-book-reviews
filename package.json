@@ -6,7 +6,7 @@
 	},
 	"devDependencies": {
 		"@wordpress/icons": "^16.0.0",
-		"@wordpress/scripts": "^34.0.0",
+		"@wordpress/scripts": "^36.0.0",
 		"path": "^0.12.7",
 		"webpack-remove-empty-scripts": "^1.0.4"
 	}
